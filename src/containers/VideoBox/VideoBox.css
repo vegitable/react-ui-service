@@ -1,3 +1,28 @@
 .videoBox {
   min-height: calc(100vh - 192px);
+  text-align: center;
+  position: relative;
+}
+
+.video {
+  background-color: #D0B17A;
+  display: inline-block;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 1500px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 575px) {
+  .video {
+    height: 330px;
+    width: 330px;
+  }
 }

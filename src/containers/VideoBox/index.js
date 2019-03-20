@@ -3,7 +3,7 @@ import './VideoBox.css';
 
 const VideoBox = () => (
   <div className='videoBox'>
-    VideoBox
+    <div className='video'></div>
   </div>
 );
 
