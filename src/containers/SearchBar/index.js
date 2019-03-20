@@ -1,5 +1,7 @@
 import React from 'react';
 import './SearchBar.css';
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class SearchBar extends React.Component {
   state = {
@@ -18,14 +20,12 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className='searchBar'>
-        <form onSubmit={this.handleSubmit}>
-          <input 
-            type="text" 
-            onChange={this.handleChange}
-            placeholder='postcode'
-          ></input>
-          <input type='submit'></input>
-        </form>
+        <input 
+          type="text" 
+          onChange={this.handleChange}
+          placeholder='postcode'
+        ></input>
+        <button onClick={this.handleSubmit}><FontAwesomeIcon icon={faSearch} /></button>
       </div>
     );
   }
