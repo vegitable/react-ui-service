@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class SearchBar extends React.Component {
@@ -21,11 +21,12 @@ class SearchBar extends React.Component {
     return (
       <div className='searchBar'>
         <input 
+          className='searchBarTextInput'
           type="text" 
           onChange={this.handleChange}
-          placeholder='postcode'
+          placeholder='POSTCODE'
         ></input>
-        <button onClick={this.handleSubmit}><FontAwesomeIcon icon={faSearch} /></button>
+        <button className='searchBarSubmitButton' onClick={this.handleSubmit}><FontAwesomeIcon icon={faAngleDoubleRight} /></button>
       </div>
     );
   }

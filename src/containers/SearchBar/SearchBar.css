@@ -1,4 +1,44 @@
 .searchBar {
   height: 128px;
   color: white;
+  position: relative;
+}
+
+.searchBarTextInput {
+  height: 64px;
+  width: 192px;
+  padding: 0 0 0 6px;
+  color: #fff;
+  background-color: #E2C2C6;
+  border: 5px solid #fff;
+  display: inline-block;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  font-family: TimesNewRoman, 
+  "Times New Roman", Times, 
+  Baskerville, Georgia, serif; 
+  font-size: 24px; 
+  font-style: italic; 
+  font-variant: normal; 
+  font-weight: 600; 
+  line-height: 26.4px;
+}
+
+.searchBarSubmitButton {
+  color: #610F7F;
+  height: 64px;
+  width: 64px;
+  font-size: 48px;
+  margin: 0 0 0 68px;
+  display: inline-block;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+::placeholder { 
+  color: #9C528B;
+  opacity: 1; 
 }
