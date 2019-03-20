@@ -1,7 +1,8 @@
 import React from 'react';
+import './VideoBox.css';
 
 const VideoBox = () => (
-  <div>
+  <div className='videoBox'>
     VideoBox
   </div>
 );
