@@ -4,7 +4,7 @@ import SideBar from '../SideBar';
 
 const Header = () => (
   <div className='header'>
-    <SideBar />
+    <SideBar pageWrapId={"header"} outerContainerId={"App"} />
   </div>
 );
 
