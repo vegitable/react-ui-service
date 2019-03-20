@@ -6,7 +6,7 @@
 
 .searchBarTextInput {
   height: 64px;
-  width: 192px;
+  width: 350px;
   padding: 0 0 0 6px;
   color: #fff;
   background-color: #E2C2C6;
@@ -24,21 +24,41 @@
   font-variant: normal; 
   font-weight: 600; 
   line-height: 26.4px;
+  transition: all 0.4s ease;
 }
 
 .searchBarSubmitButton {
   color: #610F7F;
   height: 64px;
   width: 64px;
-  font-size: 48px;
-  margin: 0 0 0 68px;
+  font-size: 34px;
+  margin: 1px 0 0 152px;
   display: inline-block;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
+  transition: all 0.4s ease;
 }
 
 ::placeholder { 
   color: #9C528B;
   opacity: 1; 
+}
+
+@media only screen and (max-width: 1500px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 575px) {
+  .searchBarTextInput {
+    width: 192px;
+  }
+
+  .searchBarSubmitButton {
+    margin: 1px 0 0 76px;
+  }
 }

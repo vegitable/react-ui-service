@@ -10,8 +10,8 @@ const SideBar = (props) => (
       <a className="menu-item" href="/about">
         ABOUT
       </a>
-      <a className="menu-item" href="/help">
-        HELP
+      <a className="menu-item" href="/donate">
+        DONATE
       </a>
   </Menu>
 );
