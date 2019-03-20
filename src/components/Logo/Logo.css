@@ -1,0 +1,14 @@
+.logo {
+  text-align: left;
+  height: 36px;
+  width: 210px;
+  padding: 12px 0 16px 12px;
+  color: #fff;
+  font-family: TimesNewRoman, 
+  "Times New Roman", Times, 
+  Baskerville, Georgia, serif; 
+  font-size: 36px; 
+  font-style: italic; 
+  font-variant: normal; 
+  font-weight: 600; 
+}
