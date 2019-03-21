@@ -3,7 +3,7 @@ import './AlertBox.css';
 
 const AlertBox = (props) => (
   <div className='alertBox'>
-    <div className='alertText'>
+    <div className='alert'>
       {props.alertMessage}
     </div>
   </div>

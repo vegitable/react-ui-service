@@ -14,7 +14,7 @@ class SearchBar extends React.Component {
 
   handleSubmit = (event) => {
     if (!this.state.postcode) {
-      this.props.sendAlert('Fill in postcode!');
+      this.props.sendAlert('Fill in yer postcode!');
     } else {
       alert(`Postcode ${this.state.postcode}`);
     }
