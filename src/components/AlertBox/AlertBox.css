@@ -1,0 +1,41 @@
+.alertBox {
+  min-height: calc(100vh - 192px);
+  text-align: center;
+  position: relative;
+}
+
+.alertText {
+  background-color: #D0B17A;
+  display: inline-block;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  height: 450px;
+  width: 450px;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 1500px) {
+
+}
+@media only screen and (max-width: 1199px) {
+  
+}
+@media only screen and (max-width: 991px) {
+  .alertText {
+    height: 450px;
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .alertText {
+    height: 340px;
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .alertText {
+    height: 290px;
+    width: 290px;
+  }
+}

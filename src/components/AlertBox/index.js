@@ -1,8 +1,11 @@
 import React from 'react';
+import './AlertBox.css';
 
 const AlertBox = (props) => (
-  <div>
-    {props.alertMessage}
+  <div className='alertBox'>
+    <div className='alertText'>
+      {props.alertMessage}
+    </div>
   </div>
 );
 
