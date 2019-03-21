@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AlertBox = () => (
+const AlertBox = (props) => (
   <div>
-    AlertBox
+    {props.alertMessage}
   </div>
 );
 
