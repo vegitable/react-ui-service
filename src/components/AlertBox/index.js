@@ -1,12 +1,24 @@
 import React from 'react';
+import pickColourPair from '../../helpers/ColourPicker';
+
 import './AlertBox.css';
 
-const AlertBox = (props) => (
-  <div className='alertBox'>
-    <div className='alert'>
-      {props.alertMessage}
+const AlertBox = (props) => {
+  const colours = pickColourPair();
+
+  const alertStyle = {
+    'color': colours.light,
+    'background-color': colours.dark
+  };
+
+  return (
+    <div className='alertBox'>
+      <div className='alert'
+        style={alertStyle}>
+        {props.alertMessage}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default AlertBox;

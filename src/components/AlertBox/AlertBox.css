@@ -32,20 +32,20 @@
   
 }
 @media only screen and (max-width: 991px) {
-  .alert {
-    height: 450px;
-    width: 450px;
-  }
 }
 @media only screen and (max-width: 767px) {
   .alert {
     height: 340px;
     width: 340px;
+    line-height: 280px;
+    font-size: 24px; 
   }
 }
 @media only screen and (max-width: 575px) {
   .alert {
     height: 290px;
     width: 290px;
+    line-height: 280px;
+    font-size: 24px; 
   }
 }
