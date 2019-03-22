@@ -18,7 +18,7 @@ class SearchBar extends React.Component {
       this.props.sendAlert('Fill in yer postcode!');
     } else {
       const result = await this.fetchRestaurants();
-      this.handleRestaurantResults(result.data);
+      this.handleRestaurantResults(result);
     }
   };
 
@@ -33,8 +33,8 @@ class SearchBar extends React.Component {
       });
   };
 
-  handleRestaurantResults = (data) => {
-    if (!data.length) {
+  handleRestaurantResults = (result) => {
+    if (!result.data.length) {
       this.props.sendAlert('No restaurants for you!');
     }
   }
