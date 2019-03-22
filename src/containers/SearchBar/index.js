@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import './SearchBar.css';
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,13 +13,25 @@ class SearchBar extends React.Component {
     this.setState({postcode: event.target.value});
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     if (!this.state.postcode) {
       this.props.sendAlert('Fill in yer postcode!');
     } else {
-      alert(`Postcode ${this.state.postcode}`);
+      const result = await this.fetchRestaurants();
+      console.log(result);
     }
   };
+
+  fetchRestaurants = async () => {
+    const url = `${process.env.REACT_APP_RESTAURANT_API_URL}${this.state.postcode || ''}`;
+    return axios.get(url)
+      .then((response) => {
+        return response;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 
   render() {
     return (

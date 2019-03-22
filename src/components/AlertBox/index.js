@@ -7,8 +7,8 @@ const AlertBox = (props) => {
   const colours = pickColourPair();
 
   const alertStyle = {
-    'color': colours.light,
-    'background-color': colours.dark
+    color: colours.light,
+    backgroundColor: colours.dark
   };
 
   return (
