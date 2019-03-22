@@ -1,0 +1,16 @@
+version: 0.2
+
+phases: 
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - echo "Build is running..."
+  build:
+    commands:
+      - echo "In the build block..."
+      - npm test
+  post_build:
+    commands:
+      - echo "Build has completed."
