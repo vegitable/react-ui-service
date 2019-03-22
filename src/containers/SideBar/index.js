@@ -1,18 +1,19 @@
 import React from 'react';
 import { bubble as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import './SideBar.css';
 
 const SideBar = (props) => (
   <Menu {...props}>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         HOME
-      </a>
-      <a className="menu-item" href="/about">
+      </Link>
+      <Link className="menu-item" to="/about">
         ABOUT
-      </a>
-      <a className="menu-item" href="/donate">
+      </Link>
+      <Link className="menu-item" to="/donate">
         DONATE
-      </a>
+      </Link>
   </Menu>
 );
 
