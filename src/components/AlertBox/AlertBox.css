@@ -18,13 +18,16 @@
   font-family: TimesNewRoman, 
   "Times New Roman", Times, 
   Baskerville, Georgia, serif; 
-  font-size: 30px; 
   font-style: italic; 
   font-variant: normal; 
   font-weight: 600; 
-  line-height: 400px;
 }
-
+.alertTextContainer {
+  height: 100px;
+  width: 450px;
+  margin: 160px 0 0 0;
+  transition: all 0.4s ease;
+}
 @media only screen and (max-width: 1500px) {
 
 }
@@ -37,15 +40,21 @@
   .alert {
     height: 340px;
     width: 340px;
-    line-height: 330px;
-    font-size: 24px; 
+  }
+  .alertTextContainer {
+    height: 100px;
+    width: 340px;
+    margin: 120px 0 0 0;
   }
 }
 @media only screen and (max-width: 575px) {
   .alert {
     height: 290px;
     width: 290px;
-    line-height: 270px;
-    font-size: 22px; 
+  }
+  .alertTextContainer {
+    height: 100px;
+    width: 290px;
+    margin: 100px 0 0 0;
   }
 }

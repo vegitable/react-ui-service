@@ -29,7 +29,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        { this.state.alert ? <AlertBox alertMessage={this.state.alertMessage} /> : <VideoBox />}
+        {/* { this.state.alert ? <AlertBox alertMessage={this.state.alertMessage} /> : <VideoBox />} */}
+        <AlertBox alertMessage='Fill in yer postcode!' />
         <SearchBar sendAlert={this.sendAlert}/>
       </div>
     );
