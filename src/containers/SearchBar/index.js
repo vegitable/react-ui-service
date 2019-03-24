@@ -20,7 +20,6 @@ class SearchBar extends React.Component {
     } else {
       const result = await this.fetchRestaurants();
       this.handleRestaurantResults(result);
-      this.props.history.push('/restaurants');
     }
   };
 
@@ -38,6 +37,8 @@ class SearchBar extends React.Component {
   handleRestaurantResults = (result) => {
     if (!result || !result.data.length) {
       this.props.sendAlert('No restaurants for you!');
+    } else {
+      this.props.history.push('/restaurants');
     }
   }
 
