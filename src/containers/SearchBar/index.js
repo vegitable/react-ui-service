@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import './SearchBar.css';
+import { withRouter } from 'react-router-dom';
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './SearchBar.css';
 
 class SearchBar extends React.Component {
   state = {
@@ -19,7 +20,7 @@ class SearchBar extends React.Component {
     } else {
       const result = await this.fetchRestaurants();
       this.handleRestaurantResults(result);
-      console.log(result);
+      this.props.history.push('/restaurants');
     }
   };
 
@@ -55,4 +56,4 @@ class SearchBar extends React.Component {
   }
 };
 
-export default SearchBar;
+export default withRouter(SearchBar);
