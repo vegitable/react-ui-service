@@ -16,7 +16,11 @@ body {
 .bm-item {
   display: inline-block;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin: 0px 0 0px 0;
+  padding: 30px 0 30px 0;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #D0B17A;
   color: #fff;
   font-family: TimesNewRoman, 
   "Times New Roman", Times, 
