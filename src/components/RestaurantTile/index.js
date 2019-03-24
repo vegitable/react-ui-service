@@ -1,8 +1,9 @@
 import React from 'react';
+import './RestaurantTile.css';
 
 const RestaurantTile = (props) => (
-  <div>
-    {console.log(props.data)}
+  <div className='restaurantTile'>
+    {props.data.name}
   </div>
 );
 

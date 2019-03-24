@@ -1,0 +1,28 @@
+.restaurantTile {
+  height: 450px;
+  width: 450px;
+  background-color: blue;
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+  margin: 40px 20px 40px 20px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1500px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 767px) {
+  .restaurantTile {
+    height: 340px;
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .restaurantTile {
+    height: 290px;
+    width: 290px;
+  }
+}
