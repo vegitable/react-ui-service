@@ -41,13 +41,35 @@ body {
   top: 18px;
 }
 
+.bm-cross-button:before, .bm-cross-button:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 5px;
+  background-color: #fff;
+}
+
+.bm-cross-button:before {
+  transform: rotate(45deg);
+}
+.bm-cross-button:after {
+  transform: rotate(-45deg);
+}
+
+.bm-cross-button span {
+  display: none;
+}
+
 .bm-burger-bars {
   background: #610F7F;
 }
 
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 36px !important;
+  width: 36px !important;
+  right: 14px !important;
+  top: 18px !important;
 }
 
 .bm-cross {
