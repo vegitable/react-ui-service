@@ -1,5 +1,5 @@
 import React from 'react';
-import pickColourPair from '../../helpers/ColourPicker';
+import { pickColourPair } from '../../helpers/ColourPicker';
 import ReactFitText from 'react-fittext';
 import './AlertBox.css';
 

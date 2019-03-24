@@ -46,6 +46,11 @@ const pickColourPair = () => {
   return pickedColours;
 };
 
+const pickDarkColour = () => {
+  const colour = randomColour(colours.dark);
+  return colour;
+}
+
 const randomColour = (colourList) => {
   const pickedColour = colourList[
     Math.floor(Math.random() * colourList.length)
@@ -53,4 +58,7 @@ const randomColour = (colourList) => {
   return pickedColour;
 };
 
-export default pickColourPair;
+export {
+  pickColourPair,
+  pickDarkColour,
+};
