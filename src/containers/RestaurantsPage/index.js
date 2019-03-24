@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ResultsPage extends React.Component {
+class RestaurantsPage extends React.Component {
   render () {
     return (
       <div>
@@ -10,4 +10,4 @@ class ResultsPage extends React.Component {
   };
 };
 
-export default ResultsPage;
+export default RestaurantsPage;

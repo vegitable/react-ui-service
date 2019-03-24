@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import Header from './containers/Header';
 import HomePage from './containers/HomePage';
 import AboutPage from './containers/AboutPage';
-import ResultsPage from './containers/ResultsPage';
+import RestaurantsPage from './containers/RestaurantsPage';
 
 class App extends Component {
 
@@ -14,7 +14,7 @@ class App extends Component {
         <Header />
         <Route exact path='/' component={HomePage}/>
         <Route path='/about' component={AboutPage}/>
-        <Route path='/restaurants' component={ResultsPage}/>
+        <Route path='/restaurants' component={RestaurantsPage}/>
       </div>
     );
   }
