@@ -1,8 +1,8 @@
 import React from 'react';
 
-const RestaurantTile = () => (
+const RestaurantTile = (props) => (
   <div>
-    RestaurantTile
+    {console.log(props.data)}
   </div>
 );
 

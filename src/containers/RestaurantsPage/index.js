@@ -1,10 +1,11 @@
 import React from 'react';
+import RestaurantsTileList from '../RestaurantTileList';
 
 class RestaurantsPage extends React.Component {
   render () {
     return (
       <div>
-        {console.log(this.props.restaurantData)}
+        <RestaurantsTileList restaurantData={this.props.restaurantData}/> 
       </div>
     );
   };
