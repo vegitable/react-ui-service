@@ -1,17 +1,25 @@
 import React from 'react';
-import { pickDarkColour } from '../../helpers/ColourPicker';
+import ReactFitText from 'react-fittext';
+import { pickColourPair } from '../../helpers/ColourPicker';
 import './RestaurantTile.css';
 
 const RestaurantTile = (props) => {
-  const colour = pickDarkColour();
+  const colours = pickColourPair();
 
   const tileStyle = {
-    backgroundColor: colour
+    color: colours.light,
+    backgroundColor: colours.dark
   };
 
   return (
     <div className='restaurantTile' style={tileStyle}>
-      {props.data.name}
+      <ReactFitText compressor={1}>
+        <div className='restaurantName'>
+          <span className='restaurantNameText'>
+            {props.data.name}
+          </span>
+        </div>
+      </ReactFitText>
     </div>
   )
 };
