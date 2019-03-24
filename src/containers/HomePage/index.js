@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoBox from '../VideoBox';
+import VideoBox from '../../components/VideoBox';
 import AlertBox from '../../components/AlertBox';
 import SearchBar from '../SearchBar';
 
