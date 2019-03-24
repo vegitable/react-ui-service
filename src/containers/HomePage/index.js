@@ -27,7 +27,7 @@ class HomePage extends React.Component {
     return (
       <div>
         { this.state.alert ? <AlertBox alertMessage={this.state.alertMessage} /> : <VideoBox />}
-        <SearchBar sendAlert={this.sendAlert}/>
+        <SearchBar sendAlert={this.sendAlert} setRestaurantData={this.props.setRestaurantData}/>
       </div>
     )
   }

@@ -4,7 +4,7 @@ class RestaurantsPage extends React.Component {
   render () {
     return (
       <div>
-        {this.props.restaurants}
+        {console.log(this.props.restaurantData)}
       </div>
     );
   };

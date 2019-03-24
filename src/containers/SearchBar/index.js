@@ -38,9 +38,10 @@ class SearchBar extends React.Component {
     if (!result || !result.data.length) {
       this.props.sendAlert('No restaurants for you!');
     } else {
+      this.props.setRestaurantData(result.data);
       this.props.history.push('/restaurants');
-    }
-  }
+    };
+  };
 
   render() {
     return (
