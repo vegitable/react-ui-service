@@ -1,0 +1,18 @@
+version: 0.2
+
+phases: 
+  install:
+    commands:
+      - git clone https://github.com/vegitable/nightwatch-testing-service.git
+      - cd nightwatch-testing-service
+      - npm install
+  pre_build:
+    commands:
+      - echo "Nightwatch Tests are preparing to run..."
+  build:
+    commands:
+      - echo "In the testing block..."
+      - npm test
+  post_build:
+    commands:
+      - echo "Build has completed."
