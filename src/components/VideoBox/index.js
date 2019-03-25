@@ -3,7 +3,9 @@ import './VideoBox.css';
 
 const VideoBox = () => (
   <div className='videoBox'>
-    <div className='video'></div>
+    <video className='video' autoPlay loop muted>
+      <source src='/videos/videoBoxVideo.mp4' type='video/mp4' />
+    </video>
   </div>
 );
 
