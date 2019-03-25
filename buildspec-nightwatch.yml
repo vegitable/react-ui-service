@@ -6,7 +6,6 @@ phases:
       - git clone https://github.com/vegitable/nightwatch-testing-service.git
       - cd nightwatch-testing-service
       - npm install
-      - npm install -g libnss3-dev
   pre_build:
     commands:
       - export NIGHTWATCH_URL=http://reactuiserviceprod.eu-west-2.elasticbeanstalk.com
