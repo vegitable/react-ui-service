@@ -20,7 +20,7 @@ class HomePage extends React.Component {
       this.setState({
         alert: false,
       });
-    }, 1000);
+    }, 2000);
   }
 
   render () {
