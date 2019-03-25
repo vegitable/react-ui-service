@@ -1,7 +1,10 @@
 .searchBar {
   height: 128px;
-  color: white;
-  position: relative;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .searchBarTextInput {

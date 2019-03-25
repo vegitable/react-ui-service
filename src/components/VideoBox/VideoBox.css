@@ -1,7 +1,11 @@
 .videoBox {
   min-height: calc(100vh - 192px);
   text-align: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .video {
