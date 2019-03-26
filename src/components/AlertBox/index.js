@@ -5,12 +5,21 @@ import './AlertBox.css';
 
 const AlertBox = (props) => {
   const colours = pickColourPair();
-
+  
+  const showAlert = () => {
+    if (props.alertVisible) {
+      return 'inline-block'
+    } else {
+      return 'none'
+    };
+  };
+  
   const alertStyle = {
     color: colours.light,
     backgroundColor: colours.dark,
-    display: props.alertVisible
+    display: showAlert()
   };
+
 
   return (
     <div className='alertBox'>

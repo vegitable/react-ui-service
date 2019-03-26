@@ -5,7 +5,7 @@ import SearchBar from '../SearchBar';
 
 class HomePage extends React.Component {
   state = {
-    alert: 'none',
+    alert: false,
     alertMessage: ''
   };
 
@@ -14,11 +14,11 @@ class HomePage extends React.Component {
       alertMessage: message
     });
     this.setState({
-      alert: 'inline-block'
+      alert: true
     });
     setTimeout(() => { 
       this.setState({
-        alert: 'none',
+        alert: false,
       });
     }, 2000);
   }
