@@ -5,7 +5,7 @@ import SearchBar from '../SearchBar';
 
 class HomePage extends React.Component {
   state = {
-    alert: false,
+    alert: 'none',
     alertMessage: ''
   };
 
@@ -14,11 +14,11 @@ class HomePage extends React.Component {
       alertMessage: message
     });
     this.setState({
-      alert: true
+      alert: 'inline-block'
     });
     setTimeout(() => { 
       this.setState({
-        alert: false,
+        alert: 'none',
       });
     }, 2000);
   }
@@ -26,7 +26,12 @@ class HomePage extends React.Component {
   render () {
     return (
       <div>
-        { this.state.alert ? <AlertBox alertMessage={this.state.alertMessage} /> : <VideoBox />}
+        {/* { this.state.alert ? <AlertBox  /> : <VideoBox />} */}
+        <VideoBox />
+        <AlertBox 
+          alertMessage={this.state.alertMessage} 
+          alertVisible={this.state.alert}
+        />
         <SearchBar sendAlert={this.sendAlert} setRestaurantData={this.props.setRestaurantData}/>
       </div>
     )

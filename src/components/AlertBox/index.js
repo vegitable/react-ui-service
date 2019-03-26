@@ -8,7 +8,8 @@ const AlertBox = (props) => {
 
   const alertStyle = {
     color: colours.light,
-    backgroundColor: colours.dark
+    backgroundColor: colours.dark,
+    display: props.alertVisible
   };
 
   return (
