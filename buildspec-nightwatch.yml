@@ -3,15 +3,14 @@ version: 0.2
 phases: 
   install:
     commands:
-      - git clone https://github.com/vegitable/nightwatch-testing-service.git
+      - git clone https://github.com/vegitable/pipeline-nightwatch-testing-service.git
       - cd nightwatch-testing-service
-      - npm install
+      - yarn install
   pre_build:
     commands:
-      - export NIGHTWATCH_URL=http://reactuiserviceprod.eu-west-2.elasticbeanstalk.com
   build:
     commands:
-      - npm test
+      - ./nightwatchrun.sh -c nightwatch.conf.js
   post_build:
     commands:
       - echo "Build has completed."
