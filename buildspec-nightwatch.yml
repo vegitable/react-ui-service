@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - git clone https://github.com/vegitable/pipeline-nightwatch-testing-service.git
-      - cd nightwatch-testing-service
+      - cd pipeline-nightwatch-testing-service
       - yarn install
   pre_build:
     commands:
