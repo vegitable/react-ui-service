@@ -5,7 +5,7 @@ import './RestaurantTileList.css';
 const RestaurantTileList = (props) => {
   const renderedItems = (props.restaurantData).map((restaurant, index) => (
     <Fragment key={restaurant._id}>
-      <RestaurantTile data={restaurant} />
+      <RestaurantTile data={restaurant} restaurantOnClick={props.restaurantOnClick} />
     </Fragment>
   ));
 
