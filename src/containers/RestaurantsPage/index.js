@@ -19,6 +19,12 @@ class RestaurantsPage extends React.Component {
     });
   };
 
+  backClicked = () => {
+    this.setState({
+      restaurantClicked: false
+    })
+  }
+
   restaurantsTileList = () => {
     return (
       <Fragment>
@@ -33,10 +39,12 @@ class RestaurantsPage extends React.Component {
     );
   };
 
-  restaurant = () => {
+  restaurantFocus = () => {
     return (
       <div>
-        <RestaurantPage restaurantData={this.state.clickedRestaurantData} />
+        <RestaurantPage 
+          restaurantData={this.state.clickedRestaurantData} 
+          backClicked={this.backClicked}/>
       </div>
     );
   };
@@ -44,7 +52,7 @@ class RestaurantsPage extends React.Component {
   render () {
     return (
       <div>
-        { this.state.restaurantClicked ? this.restaurant() : this.restaurantsTileList() }
+        { this.state.restaurantClicked ? this.restaurantFocus() : this.restaurantsTileList() }
       </div>
     );
   };

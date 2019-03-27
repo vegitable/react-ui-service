@@ -3,7 +3,10 @@ import './RestaurantPage.css';
 
 const RestaurantPage = (props) => (
   <div className='restaurantPage'>
-    {console.log(props.restaurantData.name)}
+    {props.restaurantData.name}
+    <div className='backButton' onClick={() => props.backClicked()}>
+      BACK
+    </div>
   </div>
 );
 
