@@ -12,7 +12,7 @@ const RestaurantTile = (props) => {
   };
 
   return (
-    <div className='restaurantTile' style={tileStyle} onClick={props.restaurantOnClick}>
+    <div className='restaurantTile' style={tileStyle} onClick={() => props.restaurantOnClick(props.data)}>
       <ReactFitText compressor={1}>
         <div className='restaurantName'>
           <span className='restaurantNameText'>

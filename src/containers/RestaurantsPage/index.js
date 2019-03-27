@@ -8,8 +8,8 @@ class RestaurantsPage extends React.Component {
     this.props.history.push('/');
   };
 
-  restaurantClicked = () => {
-    console.log('working')
+  restaurantClicked = (data) => {
+    console.log(data)
   };
 
   render () {
