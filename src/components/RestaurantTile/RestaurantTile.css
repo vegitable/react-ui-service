@@ -16,9 +16,26 @@
 .restaurantName {
   margin-top: 5%;
   width: 100%;
-  height: 33%;
+  height: 30%;
   top: 0px;
   left: 0px;
+}
+
+.restaurantInfo {
+  width: 100%;
+  height: 30%;
+  bottom: 0px;
+  left: 0px;
+  margin-top: 25%;
+}
+
+.restaurantInfo div {
+  height: 100%;
+  width: 33%;
+  display: inline-block;
+}
+
+.restaurantLocation {
 }
 
 @media only screen and (max-width: 1500px) {

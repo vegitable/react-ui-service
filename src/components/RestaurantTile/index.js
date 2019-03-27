@@ -20,6 +20,17 @@ const RestaurantTile = (props) => {
           </span>
         </div>
       </ReactFitText>
+      <div className='restaurantInfo'>
+        <div className='restaurantRating'>
+          {props.data.rating}
+        </div>
+        <div className='restaurantDishes'>
+          {props.data.dishes.length}
+        </div>
+          <div className='restaurantLocation'>
+            {props.data.postcode}
+          </div>
+      </div>
     </div>
   )
 };
