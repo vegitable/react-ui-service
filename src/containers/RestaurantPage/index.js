@@ -3,7 +3,7 @@ import './RestaurantPage.css';
 
 const RestaurantPage = (props) => (
   <div className='restaurantPage'>
-    RestaurantPage
+    {console.log(props.restaurantData.name)}
   </div>
 );
 

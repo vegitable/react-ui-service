@@ -34,10 +34,9 @@ class RestaurantsPage extends React.Component {
   };
 
   restaurant = () => {
-    console.log('HIT');
     return (
       <div>
-        <RestaurantPage />
+        <RestaurantPage restaurantData={this.state.clickedRestaurantData} />
       </div>
     );
   };
