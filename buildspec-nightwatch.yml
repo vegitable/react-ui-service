@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - git clone https://github.com/vegitable/webdriverio-testing-service.git
+      - cd webdriverio-testing-service
       - docker-compose up -d --build 
 
   pre_build:
