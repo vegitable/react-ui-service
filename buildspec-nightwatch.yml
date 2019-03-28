@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - git clone https://github.com/vegitable/codeceptio-testing-service.git
-      - cd webdriverio-testing-service
+      - cd codeceptio-testing-service
       - docker-compose up -d --build 
 
   pre_build:
