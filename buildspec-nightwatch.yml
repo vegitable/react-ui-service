@@ -11,7 +11,7 @@ phases:
     commands:
   build:
     commands:
-      - docker exec app-express npm run test:e2e
+      - docker exec webdriverio-container npm run test:e2e
   post_build:
     commands:
       - echo "Build has completed."
