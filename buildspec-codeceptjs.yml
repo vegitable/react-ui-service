@@ -5,13 +5,15 @@ phases:
     commands:
       - git clone https://github.com/vegitable/codeceptio-testing-service.git
       - cd codeceptio-testing-service
-      - docker-compose up -d --build 
 
   pre_build:
     commands:
+      - docker-compose up -d --build 
+
   build:
     commands:
       - docker exec codeceptio-container npm run test:e2e
+      
   post_build:
     commands:
       - echo "Build has completed."
