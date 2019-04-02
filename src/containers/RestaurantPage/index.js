@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from '../../components/Map';
 import './RestaurantPage.css';
 
 const RestaurantPage = (props) => (
@@ -7,6 +8,7 @@ const RestaurantPage = (props) => (
     <div className='backButton' onClick={() => props.backClicked()}>
       BACK
     </div>
+    <Map />
   </div>
 );
 
