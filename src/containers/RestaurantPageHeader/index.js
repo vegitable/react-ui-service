@@ -1,11 +1,12 @@
 import React from 'react';
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './RestaurantPageHeader.css';
 
 const RestaurantPageHeader = (props) => (
   <div>
-    <div className='restaurantPageName'>{props.restaurantData.name}</div>
-    <div className='backButton' onClick={() => props.backClicked()}>
+    <div className='restaurantPageHeaderName'>{props.restaurantData.name}</div>
+    <div className='restaurantPageHeaderBackButton' onClick={() => props.backClicked()}>
       <FontAwesomeIcon icon={faChevronLeft} />
     </div>
   </div>
