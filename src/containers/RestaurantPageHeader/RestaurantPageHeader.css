@@ -11,6 +11,7 @@
   font-weight: 600; 
   color: #fff;
   text-transform: uppercase;
+  float:left;
 }
 
 .restaurantPageHeaderBackButton {
@@ -18,4 +19,5 @@
   height: 64px;
   width: 64px;
   font-size: 34px;
+  float:left;
 }

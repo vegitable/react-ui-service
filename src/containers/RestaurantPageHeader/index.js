@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './RestaurantPageHeader.css';
 
 const RestaurantPageHeader = (props) => (
-  <div>
+  <div className='restaurantPageHeader'>
     <div className='restaurantPageHeaderName'>{props.restaurantData.name}</div>
     <div className='restaurantPageHeaderBackButton' onClick={() => props.backClicked()}>
       <FontAwesomeIcon icon={faChevronLeft} />

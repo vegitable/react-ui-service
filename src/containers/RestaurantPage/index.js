@@ -9,7 +9,9 @@ const RestaurantPage = (props) => (
       restaurantData={props.restaurantData} 
       backClicked={props.backClicked}
     />
-    <Map />
+    <div className='restaurantPageMapContainer'>
+      <Map />
+    </div>
   </div>
 );
 
