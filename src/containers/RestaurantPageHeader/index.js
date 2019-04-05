@@ -5,10 +5,10 @@ import './RestaurantPageHeader.css';
 
 const RestaurantPageHeader = (props) => (
   <div className='restaurantPageHeader'>
-    <div className='restaurantPageHeaderName'>{props.restaurantData.name}</div>
     <div className='restaurantPageHeaderBackButton' onClick={() => props.backClicked()}>
       <FontAwesomeIcon icon={faChevronLeft} />
     </div>
+    <div className='restaurantPageHeaderName'>{props.restaurantData.name}</div>
   </div>
 );
 

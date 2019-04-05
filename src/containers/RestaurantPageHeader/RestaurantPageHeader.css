@@ -1,7 +1,5 @@
 .restaurantPageHeaderName {
   height: 36px;
-  width: 210px;
-  padding: 12px 0 16px 12px;
   font-family: TimesNewRoman, 
   "Times New Roman", Times, 
   Baskerville, Georgia, serif; 
@@ -16,8 +14,8 @@
 
 .restaurantPageHeaderBackButton {
     color: #610F7F;
-  height: 64px;
-  width: 64px;
+  height: 60px;
+  width: 60px;
   font-size: 34px;
   float:left;
 }
