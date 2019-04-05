@@ -52,7 +52,9 @@ class SearchBar extends React.Component {
           onChange={this.handleChange}
           placeholder='POSTCODE'
         ></input>
-        <button className='searchBarSubmitButton' onClick={this.handleSubmit}><FontAwesomeIcon icon={faAngleDoubleRight} /></button>
+        <button className='searchBarSubmitButton' onClick={this.handleSubmit}>
+          <FontAwesomeIcon icon={faAngleDoubleRight} />
+        </button>
       </div>
     );
   }

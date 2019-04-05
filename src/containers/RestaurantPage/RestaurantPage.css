@@ -5,7 +5,6 @@
 }
 
 .restaurantPageName {
-  text-align: left;
   height: 36px;
   width: 210px;
   padding: 12px 0 16px 12px;
@@ -17,4 +16,12 @@
   font-variant: normal; 
   font-weight: 600; 
   color: #fff;
+  text-transform: uppercase;
+}
+
+.backButton {
+  color: #610F7F;
+  height: 64px;
+  width: 64px;
+  font-size: 34px;
 }
