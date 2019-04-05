@@ -1,4 +1,5 @@
 import React from 'react';
+import RestaurantPageHeader from '../RestaurantPageHeader';
 import Map from '../../components/Map';
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +11,7 @@ const RestaurantPage = (props) => (
     <div className='backButton' onClick={() => props.backClicked()}>
       <FontAwesomeIcon icon={faChevronLeft} />
     </div>
+    <RestaurantPageHeader/>
     <Map />
   </div>
 );
