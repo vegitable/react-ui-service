@@ -10,11 +10,18 @@ class SearchBar extends React.Component {
     postcode: ''
   };
 
+  handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      console.log('working');
+    }
+    console.log('HIT');
+  }
+
   handleChange = (event) => {
     this.setState({postcode: event.target.value});
   };
 
-  handleSubmit = async (event) => {
+  handleSubmit = async () => {
     if (!this.state.postcode) {
       this.props.sendAlert('Fill in yer postcode!');
     } else {
@@ -50,6 +57,7 @@ class SearchBar extends React.Component {
           className='searchBarTextInput'
           type="text" 
           onChange={this.handleChange}
+          onKeyDown={this.handleKeyDown}
           placeholder='POSTCODE'
         ></input>
         <button className='searchBarSubmitButton' onClick={this.handleSubmit}>
