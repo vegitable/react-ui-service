@@ -12,10 +12,9 @@ class SearchBar extends React.Component {
 
   handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      console.log('working');
-    }
-    console.log('HIT');
-  }
+      this.handleSubmit();
+    };
+  };
 
   handleChange = (event) => {
     this.setState({postcode: event.target.value});
