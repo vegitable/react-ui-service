@@ -58,6 +58,7 @@ class SearchBar extends React.Component {
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDown}
           placeholder='POSTCODE'
+          autoFocus='true'
         ></input>
         <button className='searchBarSubmitButton' onClick={this.handleSubmit}>
           <FontAwesomeIcon icon={faAngleDoubleRight} />
