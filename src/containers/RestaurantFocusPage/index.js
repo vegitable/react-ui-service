@@ -1,11 +1,11 @@
 import React from 'react';
-import RestaurantPageHeader from '../RestaurantPageHeader';
+import RestaurantFocusPageHeader from '../RestaurantFocusPageHeader';
 import Map from '../../components/Map';
 import './RestaurantPage.css';
 
 const RestaurantPage = (props) => (
   <div className='restaurantPage'>
-    <RestaurantPageHeader 
+    <RestaurantFocusPageHeader 
       restaurantData={props.restaurantData} 
       backClicked={props.backClicked}
     />

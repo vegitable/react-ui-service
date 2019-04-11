@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import RestaurantsTileList from '../RestaurantTileList';
-import RestaurantPage from '../RestaurantPage';
+import RestaurantFocusPage from '../RestaurantFocusPage';
 import { withRouter } from 'react-router-dom';
 
 class RestaurantsPage extends React.Component {
@@ -42,7 +42,7 @@ class RestaurantsPage extends React.Component {
   restaurantFocus = () => {
     return (
       <div>
-        <RestaurantPage 
+        <RestaurantFocusPage 
           restaurantData={this.state.clickedRestaurantData} 
           backClicked={this.backClicked}/>
       </div>
