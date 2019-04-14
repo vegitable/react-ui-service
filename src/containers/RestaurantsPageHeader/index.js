@@ -1,7 +1,8 @@
 import React from 'react';
+import './RestaurantsPageHeader.css';
 
 const RestaurantsPageHeader = () => (
-  <div>
+  <div className='restaurantsPageHeader'>
     RestaurantsPageHeader
   </div>
 );
