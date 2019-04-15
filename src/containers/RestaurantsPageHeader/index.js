@@ -5,9 +5,9 @@ import './RestaurantsPageHeader.css';
 
 const RestaurantsPageHeader = () => (
   <div className='restaurantsPageHeader'>
-    <button>
+    <div>
       <FontAwesomeIcon icon={faUtensils} />
-    </button>
+    </div>
   </div>
 );
 
