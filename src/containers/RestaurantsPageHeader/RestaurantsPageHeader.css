@@ -4,8 +4,10 @@
 
 .restaurantsPageHeader div {
   display: inline-block;
-  color: #fff;
-  height: 64px;
+  color: #610F7F;
   width: 64px;
   font-size: 34px;
+  border: 5px solid #fff;
+  padding: 16px 0 16px 0;
+  margin: 0 4px 0 4px;
 }
