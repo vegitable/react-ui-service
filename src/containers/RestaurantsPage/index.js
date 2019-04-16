@@ -15,13 +15,17 @@ class RestaurantsPage extends React.Component {
 
   displayRestaurants = () => (
     <div>
-      <RestaurantsPageHeader />
+      <RestaurantsPageHeader changeDisplayOrder={this.changeDisplayOrder} />
       <RestaurantsTileList 
         restaurantData={this.props.restaurantData}
         restaurantOnClick={this.restaurantClicked}  
       />
     </div>
-  )
+  );
+
+  changeDisplayOrder = (orderBy) => {
+    console.log(orderBy);
+  };
 
   restaurantClicked = (data) => {
     this.setState({
