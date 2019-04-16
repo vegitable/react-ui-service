@@ -1,3 +1,11 @@
 .restaurantsPageHeader {
   padding: 64px 0 0 0;
 }
+
+.restaurantsPageHeader div {
+  display: inline-block;
+  color: #fff;
+  height: 64px;
+  width: 64px;
+  font-size: 34px;
+}
