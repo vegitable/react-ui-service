@@ -18,25 +18,28 @@ const RestaurantsPageHeader = (props) => {
     };
   };
 
-  const buttonStyleArray = {
-    distanceStyle: selectedButtonStyle(), 
-    dishesStyle: unselectedButtonStyle(), 
-    ratingStyle: unselectedButtonStyle()
+  const buttonStyles = {
+    distance: selectedButtonStyle(), 
+    dishes: unselectedButtonStyle(), 
+    rating: unselectedButtonStyle()
   };
 
   const orderByButtonClicked = (button) => {
     props.changeDisplayOrder(button);
+    for (var style in buttonStyles) {
+      console.log(style);
+    }
   };
 
   return (
     <div className='restaurantsPageHeader'>
-      <div onClick={() => orderByButtonClicked('distance')} style={buttonStyleArray.distanceStyle}>
+      <div onClick={() => orderByButtonClicked('distance')} style={buttonStyles.distance}>
         <FontAwesomeIcon icon={faRoute} />
       </div>
-      <div onClick={() => orderByButtonClicked('dishes')} style={buttonStyleArray.dishesStyle}>
+      <div onClick={() => orderByButtonClicked('dishes')} style={buttonStyles.dishes}>
         <FontAwesomeIcon icon={faUtensils} />
       </div>
-      <div onClick={() => orderByButtonClicked('rating')} style={buttonStyleArray.ratingStyle}>
+      <div onClick={() => orderByButtonClicked('rating')} style={buttonStyles.rating}>
         <FontAwesomeIcon icon={faStar} />
       </div>
     </div>
