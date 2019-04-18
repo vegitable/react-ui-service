@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './RestaurantsPageHeader.css';
 
 class RestaurantsPageHeader extends Component {
+  state = {
+    selectedButton: 'distance'
+  };
+
   unselectedButtonStyle = () => {
     return {
       color: '#E2C2C6',
@@ -14,7 +18,7 @@ class RestaurantsPageHeader extends Component {
   selectedButtonStyle = () => {
     return {
       color: '#610F7F',
-      backgroundColor: 'none'
+      backgroundColor: '#E2C2C6'
     };
   };
 
@@ -25,16 +29,21 @@ class RestaurantsPageHeader extends Component {
   };
 
   orderByButtonClicked = (button) => {
+    this.setState({
+      selectedButton: button
+    });
+    this.setButtonStyles(button);
+    this.props.changeDisplayOrder(button);
+  };
+  
+  setButtonStyles = (button) => {
     for (var style in this.buttonStyles) {
       if (button === style) {
         this.buttonStyles[style] = this.selectedButtonStyle();
-        console.log(this.buttonStyles[style])
       } else {
         this.buttonStyles[style] = this.unselectedButtonStyle();
-        console.log(this.buttonStyles[style])
       };
     };
-    this.props.changeDisplayOrder(button);
   };
 
   render() {
