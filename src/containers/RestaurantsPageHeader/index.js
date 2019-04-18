@@ -49,6 +49,7 @@ class RestaurantsPageHeader extends Component {
   render() {
     return (
       <div className='restaurantsPageHeader'>
+        <h2>{this.props.numberOfRestaurants} Restaurants found!</h2>
         <div onClick={() => this.orderByButtonClicked('distance')} style={this.buttonStyles.distance}>
           <FontAwesomeIcon icon={faRoute} />
         </div>

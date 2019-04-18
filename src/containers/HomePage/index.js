@@ -26,7 +26,6 @@ class HomePage extends React.Component {
   render () {
     return (
       <div>
-        {/* { this.state.alert ? <AlertBox  /> : <VideoBox />} */}
         <VideoBox />
         <AlertBox 
           alertMessage={this.state.alertMessage} 
