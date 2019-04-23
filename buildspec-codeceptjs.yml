@@ -3,7 +3,7 @@ version: 0.2
 phases: 
   install:
     commands:
-      - git clone https://github.com/vegitable/testing.git
+      - git clone https://github.com/vegitable/codeceptio-testing-service.git
       - cd codeceptio-testing-service
 
   pre_build:
